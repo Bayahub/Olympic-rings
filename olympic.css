@@ -1,68 +1,85 @@
-*css {
-    padding: auto;
-    margin: auto;
-
+body {
+    background-color: #071C2E;
 }
 
 .main-container {
-    background-color:#4B4B4B;
-    height: 733px;
-   
+    width: 38em;
+    height: 17.5em;
+    font-size: 37px;
+    position: absolute;
 }
-
-.first-row {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    padding-top: 30px;
+.circle {
+    width: 10em;
+    height: 10em;
+    border: 1em solid;
+    border-radius: 50%;
+    position: absolute;
 }
 
 .circle1 {
-    height: 400px;
-    width: 400px;
-    border: 40px solid black;
-    border-color: blue;
-    border-radius: 150%;
+    border-color: #007AC9;
 }
 
 .circle2 {
-    height: 400px;
-    width: 400px;
-    border: 40px solid black;
-    border-color: black;
-    border-radius: 150%;
+    left: 13em;
 }
 
 .circle3 {
-    height: 400px;
-    width: 400px;
-    border: 40px solid black;
-    border-color: red;
-    border-radius: 150%;
+    border-color: #E10E49;
+    left: 26em;
+}
+.circle4{
+border-color: #FFA100;
+top: 5.5em;
+left: 6.5em;
+}
+.circle5{
+    border-color: #009B3A;
+    top: 5.5em;
+    left: 19.5em;
 }
 
-.second-row {
-    display: flex;
-    flex-direction: row;
-    margin-left: 230px;
-    gap: 40px;
-    margin-top: -285px;
+.patch {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    overflow: hidden;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5em 0 5em 10em;
 
 }
 
-.circle4 {
-    height: 400px;
-    width: 400px;
-    border: 40px solid black;
-    border-color: yellow;
-    border-radius: 150%;
+.patch:before {
+    content: "";
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    top: -5em;
+    left: -10em;
+    border: 1em solid;
+    border-radius: 50%;
 }
 
-.circle5 {
-    height: 400px;
-    width: 400px;
-    border: 40px solid black;
-    border-color: green;
+.patch1:before {
+    border-color: #007AC9;
+}
 
-    border-radius: 150%;
+.patch2 {
+    left: 13em;
+}
+
+.patch3 {
+    left: 13em;
+    transform: rotate(100degree);
+}
+
+.patch4 {
+    left: 26em;
+    transform: rotate(100degree);
+}
+
+.patch4:before {
+    border-color:#E10E49;
+   
 }
